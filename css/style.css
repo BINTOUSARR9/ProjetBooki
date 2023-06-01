@@ -154,8 +154,8 @@ header{
      display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap:20px;
-    margin-top: 20px;
+ 
+    margin-top: 10px;
   }
     .tittle-1{
         font-family: 'Raleway';
@@ -164,13 +164,16 @@ header{
         font-size: 22px;
         line-height: 26px;
         color: #000000;
-        margin: 0;
+        margin-top: 0px;
     }
 
     .subtitle{
-    margin-top: 8px 0 0 0;
+   margin-top: 0;
     font-size: 16px;
+    margin-bottom: 20px;
     }
+ 
+
 /* FIN INFOGROUP*/
 
 
@@ -180,6 +183,7 @@ header{
     display:flex;
     align-items: center;
     height: 49px;
+    margin-bottom: 20px;
 }
 .searchbar-1 {
     width: 195px;
@@ -189,6 +193,8 @@ header{
     text-align: center;
     color: #000000;
     border: 1px solid #F2F2F2;
+    gap: 30px;
+  
 }
 .icon{
     width: 50px;
@@ -251,7 +257,9 @@ border: 0px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 35px;
+    margin-bottom: 10px;
+    margin-top: 20px;
  
 }
 .filtre-icon{
@@ -294,6 +302,7 @@ border: 0px;
     padding: 0px;
     gap: 10px;
     width: 1340px;
+    margin: 10px;
 
    
 }
@@ -315,8 +324,6 @@ border: 0px;
     width: 24px;
    align-items: center;
    justify-content: center;
-   
- 
 }
 /* FIN BARRE DINFOS*/
 
@@ -332,7 +339,9 @@ width: 65%;
     flex-direction:row;
     align-items:center;
     padding: 5px;
-   gap: 23px;
+    gap: 30px;
+    flex-wrap:wrap;
+    margin-top: 28px;
 }
 .rectangle-img{
     box-sizing: border-box;
@@ -347,6 +356,7 @@ width: 65%;
     object-fit: cover;
     height: 110px;
     border-radius: 20px 25px 0 0; 
+    width: 100%;
 }
 .color-grey{
 color:#dfdede;
@@ -362,7 +372,21 @@ color:#dfdede;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width:calc( ( 100% - 60px ) / 3);
+    box-sizing: border-box;
 }
+.card-subtitle {
+    margin-top: 5px;
+} 
+.card-title {
+    font-size: 16px;
+    margin-bottom:0px;
+}
+
+.card-rating{
+padding: 0; 5px; 10px;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -382,7 +406,7 @@ color:black;
 
 
 /* SECTION ACTIVITE*/
-.box-container2{
+.box-container-activite{
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -390,9 +414,10 @@ color:black;
     gap: 30px;
 }
 .img-activite{
-    width: 250.5px;
-    height: 300px;
+    width: 100%;
+    height: 380px;
     border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
 }
 .activite-marseille{
 display: flex;
@@ -408,17 +433,6 @@ gap: 20px;
 .survol:hover{
         transform: scale(1.03);
       }
-
-.card-1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    height: 48px;
-    background:white;
-    border-radius: 3px 0px 20px 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
 .texte-2{
     text-decoration: none;
     font-weight: 700;
@@ -430,6 +444,15 @@ gap: 20px;
 .none{
 text-decoration: none;
 }
+.card-activite{
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    width:calc( ( 100% - 90px ) / 4);
+    box-sizing: border-box;
+    width: 297px
+}
 /* FIN SECTION ACTIVITE*/
 
 
@@ -440,7 +463,6 @@ text-decoration: none;
         height: auto;
         background: #F2F2F2;
         display: flex;
-      
         margin-left: 0;
         display: flex;
         flex-direction: row;
@@ -461,6 +483,7 @@ text-decoration: none;
     font-size: 16px;
     color:black;
     text-decoration: none;
+ 
     
 }
 .colone{
@@ -470,6 +493,7 @@ text-decoration: none;
     padding: 20px;
     gap: 15px;
     width: 456.67px;   
+
 }
 /* FIN PIED DE PAGE*/
 
@@ -515,4 +539,33 @@ text-decoration: none;
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+}
+.card-populaire{
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: white;
+    height: 145px;
+    width: 290px;
+    margin-bottom: 30px;
+    display: flex;
+    margin-right: 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.062);
+    transition: 0.8s;
+    margin-top: 30px;
+
+}
+
+.card-txt-populaire{
+    margin-left: 15px;
+    line-height: 25px;
+}
+
+.populaires
+.card-txt-populaire{
+margin-top: 10px;
+}
+
+.card-rating-populaire
+.card-txt-populaire{
+margin-top: 25px;
 }
